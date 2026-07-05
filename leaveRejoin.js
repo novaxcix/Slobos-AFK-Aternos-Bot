@@ -57,7 +57,7 @@ function setupLeaveRejoin(bot, createBot) {
         }
 
         // Cap at 30s max
-        delay = Math.min(delay, 15000)
+        delay = Math.min(delay, 999999999999999999999)
 
         logThrottled(`[AFK] Rejoin scheduled in ${Math.round(delay / 1000)}s (reason: ${reason}, attempt: ${reconnectAttempts})`)
 
